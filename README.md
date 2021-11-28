@@ -11,8 +11,8 @@ Projeto Desenvolvido Totalmente do Zero, Com Meus Conhecimentos Adquiridos Até 
 - README.md
 - index.html
 - ./assets
-- .assets/img
-- .assets/css
+  - /img
+  - /css
 
 ### Fonte
 
