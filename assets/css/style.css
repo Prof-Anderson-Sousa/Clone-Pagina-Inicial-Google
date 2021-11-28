@@ -1,0 +1,251 @@
+/* Configuração Global */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Configuração de Fonte na TAG Body */
+body {
+    font-family: "Arial", Helvetica, sans-serif;
+}
+
+/* Configurações do Cabeçalho */
+header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 50px;
+}
+
+.nav-bar {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav-itens {
+    align-self: center;
+    font-size: 13px;
+    margin-left: 13px;
+}
+
+.nav-itens > a {
+    text-decoration: none;
+    color: #212121;
+}
+
+.nav-itens > a:hover {
+    text-decoration: underline;
+}
+
+.nav-itens:nth-child(3) > a > img {
+    padding: 7px;
+    border-radius: 100%;
+    margin-top: 3px;
+}
+
+.nav-itens:nth-child(3) > a > img:hover {
+    background-color: #F0F0F0;
+}
+
+.nav-itens:nth-child(4) > a > img {
+    border-radius: 100%;
+    padding: 4px;
+}
+
+.nav-itens:nth-child(4) > a > img:hover {
+    background-color: #F0F0F0;
+}
+
+/* Configurações da Logo */
+main {
+    display: flex;
+}
+
+figure {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+figure > figcaption {
+    display: none;
+}
+
+/* Configuração Área de Pesquisa */
+.search {  
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    width: 40%;
+    height: 45px;
+    border: solid 1px red;
+    margin-top: 25px;
+    border: 1.6px solid #E2E2E2;
+    border-radius: 20px;
+}
+
+.search:hover {  
+    -webkit-box-shadow: 0px 1px 5px -2px #b0b0b0;;
+    -moz-box-shadow: 0px 1px 5px -2px #b0b0b0;;
+    box-shadow: 0px 1px 5px -2px #b0b0b0;;
+}
+
+.lupa {
+    cursor: pointer;
+    width: 25px;
+    margin: auto 13px;
+}
+
+.keyboard {
+    cursor: pointer;
+    width: 28px;
+    margin: auto 0px;
+}
+.mic {
+    cursor: pointer;
+    width: 30px;
+    margin: auto 13px;
+}
+
+input { 
+    border: none;
+    margin: auto auto;
+    width: 90%;
+    height: 30px;
+}
+
+input:focus { 
+    outline: 0;
+}
+
+/* Configuração Botões */
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons > button {
+    border: 1px solid #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    height: 36px;
+    padding: 0 16px;
+    margin: 10px;
+}
+
+.buttons > button:hover {
+    color: #000;
+    cursor: pointer;
+    border: 1px solid #E2E2E2;
+    -webkit-box-shadow: 0px 1px 5px -2px rgba(176,176,176,1);
+    -moz-box-shadow: 0px 1px 5px -2px rgba(176,176,176,1);
+    box-shadow: 0px 1px 5px -2px rgba(176,176,176,1);
+}
+
+/* Configuração Texto Adicional */
+.text{
+    margin-top: 20px;
+}
+
+.text > p {
+    text-align: center;
+    font-size: 13px;
+}
+
+.text > p > a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+.text > p > a:hover {
+    text-decoration: underline;
+}
+
+/* País de Acesso */
+.nation {
+    display: flex;
+    margin-top: 175px;
+    height: 50px;
+    background-color: #F2F2F2;
+}
+
+.nation > span {
+    color: #70757a;
+    align-self: center;
+    font-size: 15px;
+    margin-left: 40px;
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 2px solid #E2E2E2;
+    background-color: #F2F2F2;
+    height: 55px;
+}
+
+.footer-left, .footer-right {
+    margin: 0 20px;
+    align-self: center;
+}
+
+.footer-itens {
+    float: left;
+    list-style: none;
+    margin: 0 20px;
+}
+
+.footer-itens > a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #70757a;
+}
+
+.footer-itens > a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade */
+@media screen and (max-width: 907px) {
+    .search {  
+        width: 65%;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer-left {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .search {  
+        width: 80%;
+    }
+
+    .nation {
+        margin-top: 275px;
+    }
+    
+    .footer-left {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .footer-right {
+        display: none;
+    }
+}
+
+
+
+
